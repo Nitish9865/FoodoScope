@@ -1,0 +1,110 @@
+/* ── DAILY MODE — Warm Kitchen Aesthetic ── */
+
+.daily-bg {
+  background: linear-gradient(160deg, #FBF7F0 0%, #F7EDE0 40%, #FBF5E8 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.daily-bg::before {
+  content: '';
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(232,164,39,0.12) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.daily-bg::after {
+  content: '';
+  position: fixed;
+  bottom: -80px;
+  left: -60px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(196,98,45,0.08) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.daily-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Meal slot cards */
+.daily-slot-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  cursor: pointer;
+  border: 1.5px solid rgba(196,98,45,0.1);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s var(--ease-smooth);
+}
+
+.daily-slot-card:hover {
+  border-color: var(--terra);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(196,98,45,0.15);
+}
+
+.daily-slot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.daily-slot-label {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-transform: capitalize;
+  margin-bottom: 0.15rem;
+}
+
+.daily-slot-time {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: rgba(28,28,28,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.daily-slot-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.daily-slot-meal {
+  font-size: 0.9rem;
+  color: var(--terra);
+  font-weight: 500;
+}
+
+.daily-slot-empty {
+  font-size: 0.85rem;
+  color: rgba(28,28,28,0.3);
+  font-style: italic;
+}
+
+/* Cheat day pulse */
+@keyframes cheat-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(232,164,39,0.4); }
+  50% { box-shadow: 0 4px 32px rgba(196,98,45,0.6), 0 0 0 4px rgba(232,164,39,0.2); }
+}
+
+/* Terracotta pattern background dots */
+.daily-pattern {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(196,98,45,0.06) 1px, transparent 0);
+  background-size: 36px 36px;
+}

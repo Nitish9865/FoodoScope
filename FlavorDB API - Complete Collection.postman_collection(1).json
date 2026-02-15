@@ -1,0 +1,1933 @@
+{
+  "info": {
+    "_postman_id": "7ee57c92-fa39-4982-a945-bed01928ee93",
+    "name": "FlavorDB API - Complete Collection",
+    "description": "Complete Postman collection for FlavorDB API with all 39 endpoints, authorization, and examples. Ready to import and use.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52296734",
+    "_collection_link": "https://go.postman.co/collection/52296734-7ee57c92-fa39-4982-a945-bed01928ee93?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Property Controller",
+      "item": [
+        {
+          "name": "Properties By Taste Threshold",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/taste-threshold?values=fruity&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "taste-threshold"
+              ],
+              "query": [
+                {
+                  "key": "values",
+                  "value": "fruity"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules based on their taste detection threshold values. Use when researching how potent different flavor compounds are."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Synthesis",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/synthesis?values=acid&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "synthesis"
+              ],
+              "query": [
+                {
+                  "key": "values",
+                  "value": "acid"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches for molecules by their synthesis or production method. Use when you need to know if a flavor is naturally derived or synthesized."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Trade Association Guidelines",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-tradeAssociationGuidelines?guideline=0.390 mg&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-tradeAssociationGuidelines"
+              ],
+              "query": [
+                {
+                  "key": "guideline",
+                  "value": "0.390 mg"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules with specific trade association usage guidelines. Use when checking industry usage recommendations and restrictions."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Natural Occurrence",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-naturalOccurrence?occurrence=Dandelion&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-naturalOccurrence"
+              ],
+              "query": [
+                {
+                  "key": "occurrence",
+                  "value": "Dandelion"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches for molecules by where they naturally occur in nature. Use when researching natural sources of flavor compounds."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Nas Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-nas-range?min=21&max=8811&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-nas-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "21"
+                },
+                {
+                  "key": "max",
+                  "value": "8811"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves properties for molecules within a NAS (National Academy of Sciences) number range. Use when working with batches of NAS classified compounds."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Jecfa Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-jecfa-range?min=1&max=1897&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-jecfa-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "1"
+                },
+                {
+                  "key": "max",
+                  "value": "1897"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves properties for molecules within a JECFA (Joint FAO/WHO Expert Committee) number range. Use when analyzing groups of JECFA evaluated compounds."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Iofi Categorisation",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-iofi-categorisation?category=Artificial&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-iofi-categorisation"
+              ],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Artificial"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules by International Organization of the Flavor Industry (IOFI) categories. Use when working with global flavor industry classifications."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Fl No Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-flNo-range?min=1.001&max=56.000&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-flNo-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "1.001"
+                },
+                {
+                  "key": "max",
+                  "value": "56.000"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves properties for molecules within a Flavor (FL) number range. Use when working with batches of flavor number classifications."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Fema Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-fema-range?min=2001&max=4905&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-fema-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "2001"
+                },
+                {
+                  "key": "max",
+                  "value": "4905"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves properties for molecules within a FEMA (Flavor and Extract Manufacturers Association) number range. Use when batch processing FEMA approved flavors."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Einecs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-einecs?einecs_no=232-519-5&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-einecs"
+              ],
+              "query": [
+                {
+                  "key": "einecs_no",
+                  "value": "232-519-5"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches by European Inventory of Existing Commercial Substances number. Use when checking European chemical registration status."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Description",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-description?desc=sweet&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-description"
+              ],
+              "query": [
+                {
+                  "key": "desc",
+                  "value": "sweet"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches molecules by text descriptions of their properties or characteristics. Use when looking for molecules based on descriptive terms."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Coe Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-coe-range?min=2&max=2100&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-coe-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "2"
+                },
+                {
+                  "key": "max",
+                  "value": "2100"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves properties for molecules within a Council of Europe (COE) number range. Use when batch processing COE registered compounds."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Coe Approval",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-coe-approval?coe_approval=beverages&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-coe-approval"
+              ],
+              "query": [
+                {
+                  "key": "coe_approval",
+                  "value": "beverages"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches molecules by their Council of Europe (COE) approval status. Use when checking which flavors are approved for use in Europe."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Aroma Threshold Values",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/properties/by-aromaThresholdValues?threshold=100 ppb&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "properties",
+                "by-aromaThresholdValues"
+              ],
+              "query": [
+                {
+                  "key": "threshold",
+                  "value": "100 ppb"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules based on their aroma detection threshold. Use when studying how easily different aromas can be detected."
+          },
+          "response": []
+        }
+      ],
+      "description": "APIs for regulatory and industry classification data for flavor molecules"
+    },
+    {
+      "name": "More Property Controller",
+      "item": [
+        {
+          "name": "Properties By Surface Area",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-surfaceArea-range?min=24.63&max=1000.00&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-surfaceArea-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "24.63"
+                },
+                {
+                  "key": "max",
+                  "value": "1000.00"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified surface area range. Use when filtering by molecular size window."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Rotatable Bonds",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-rotatableBonds-range?min=0&max=40&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-rotatableBonds-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "40"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified rotatable bond count range. Use when filtering by molecular flexibility range."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Number Of Atoms",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-numberOfAtoms-range?min=1&max=150&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-numberOfAtoms-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "1"
+                },
+                {
+                  "key": "max",
+                  "value": "150"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified atom count range. Use when filtering by molecular size window."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Num Rings",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-numRings-range?min=0&max=10&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-numRings-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "10"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified total ring count range. Use when filtering by structural complexity range."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Energy",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-energy-range?min=-20&max=200&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-energy-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "-20"
+                },
+                {
+                  "key": "max",
+                  "value": "200"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified energy value range. Use when filtering by molecular stability window."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Aromatic Rings",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-aromaticRings-range?min=0&max=10&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-aromaticRings-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "10"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified aromatic ring count range. Use when filtering by aromatic character range."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Aromatic Bonds",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-aromaticBonds-range?min=0&max=60&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-aromaticBonds-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "60"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified aromatic bond count range. Use when analyzing varying degrees of aromaticity."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By Alogp",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-alogp-range?min=-10&max=10&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-alogp-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "-10"
+                },
+                {
+                  "key": "max",
+                  "value": "10"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified ALogP (lipophilicity) range. Use when filtering by fat/water solubility properties."
+          },
+          "response": []
+        },
+        {
+          "name": "Properties By PubChem ID Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/more_properties/by-pubchemId-range?min=1&max=100000000&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "more_properties",
+                "by-pubchemId-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "1"
+                },
+                {
+                  "key": "max",
+                  "value": "100000000"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves additional properties for molecules within a PubChem ID range. Use when batch retrieving extended properties for molecule sets."
+          },
+          "response": []
+        }
+      ],
+      "description": "APIs for detailed chemical and physical property data"
+    },
+    {
+      "name": "Molecule Controller",
+      "item": [
+        {
+          "name": "Molecules By Weight Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/filter-by-weight-range?min=4&max=1000&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "filter-by-weight-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "4"
+                },
+                {
+                  "key": "max",
+                  "value": "1000"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules with molecular weights within a specified range. Use when you need molecules within a particular size window."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Type",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/filter-by-type?type=natural&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "filter-by-type"
+              ],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "natural"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Filters molecules by their chemical type or classification. Use when you need molecules of a specific chemical category."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Hbd Count Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/filter-by-hbd-count-range?min=0&max=20&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "filter-by-hbd-count-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "20"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules with hydrogen bond donor counts within a range. Use when filtering molecules by their hydrogen bonding capacity."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Hba Count Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/filter-by-hba-count-range?min=0&max=20&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "filter-by-hba-count-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "20"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules with hydrogen bond acceptor counts within a range. Use when analyzing molecule interaction properties within specific limits."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Topological Polar Surface Area Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-topologicalPolarSurfaceArea-range?min=0&max=500&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-topologicalPolarSurfaceArea-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "0"
+                },
+                {
+                  "key": "max",
+                  "value": "500"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified polar surface area range. Use when filtering molecules by their absorption or permeability characteristics."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Pubchem ID Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-pubchemId-range?min=4&max=100000000&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-pubchemId-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "4"
+                },
+                {
+                  "key": "max",
+                  "value": "100000000"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Retrieves molecules within a range of PubChem IDs. Use when batch processing or analyzing molecules in a specific ID range."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Monoisotopic Mass Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-monoisotopicMass-range?min=4&max=1000&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-monoisotopicMass-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "4"
+                },
+                {
+                  "key": "max",
+                  "value": "1000"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules within a specified mass range. Use when analyzing mass spectrometry results or filtering by mass window."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Heavy Atom Count Range",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-heavyAtomCount-range?min=1&max=100&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-heavyAtomCount-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "1"
+                },
+                {
+                  "key": "max",
+                  "value": "100"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules with heavy atom counts within a specified range. Use when filtering by molecular complexity or size."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Functional Groups",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-functionalGroups?functional_groups=alkene&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-functionalGroups"
+              ],
+              "query": [
+                {
+                  "key": "functional_groups",
+                  "value": "alkene"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules that contain specific chemical functional groups. Use when researching molecules with particular chemical structures or properties."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Flavor Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-flavorProfile?flavor_profile=sweet-like&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-flavorProfile"
+              ],
+              "query": [
+                {
+                  "key": "flavor_profile",
+                  "value": "sweet-like"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds molecules associated with specific flavors (sweet, bitter, fruity, etc.). Use when you want to know which chemical compounds create a particular flavor."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Fema Flavor Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-femaFlavorProfile?fema_flavor_profile=Fruit&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-femaFlavorProfile"
+              ],
+              "query": [
+                {
+                  "key": "fema_flavor_profile",
+                  "value": "Fruit"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches molecules by FEMA flavor classifications. Use when working with industry-standard flavor classifications for food manufacturing."
+          },
+          "response": []
+        },
+        {
+          "name": "Molecules By Common Name",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/molecules_data/by-commonName?common_name=hesperidin&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "molecules_data",
+                "by-commonName"
+              ],
+              "query": [
+                {
+                  "key": "common_name",
+                  "value": "hesperidin"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds flavor molecules by their common chemical names. Use when you know the name of a flavor compound and want its details."
+          },
+          "response": []
+        }
+      ],
+      "description": "APIs for flavor molecules and their chemical properties"
+    },
+    {
+      "name": "Entity Controller",
+      "item": [
+        {
+          "name": "Entities By Natural Source",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/entities/by-natural-source?natural_source_name=cattle&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "entities",
+                "by-natural-source"
+              ],
+              "query": [
+                {
+                  "key": "natural_source_name",
+                  "value": "cattle"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Finds all foods or ingredients that come from a specific natural source. Use when researching what foods share the same natural origin or source."
+          },
+          "response": []
+        },
+        {
+          "name": "Entities By Name And Category",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/entities/by-name-and-category?entity_alias=grass&category=essentialoil&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "entities",
+                "by-name-and-category"
+              ],
+              "query": [
+                {
+                  "key": "entity_alias",
+                  "value": "grass"
+                },
+                {
+                  "key": "category",
+                  "value": "essentialoil"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches for foods or ingredients by their name and category type. Use when you need to find specific foods within a particular category (like fruits, vegetables, meats, etc.)."
+          },
+          "response": []
+        },
+        {
+          "name": "Entities By Readable Name",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/entities/by-entity-alias-readable?entity_alias_readable=grass&page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "entities",
+                "by-entity-alias-readable"
+              ],
+              "query": [
+                {
+                  "key": "entity_alias_readable",
+                  "value": "grass"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Searches for foods using their common, everyday names. Use when you want to look up a food using the name people actually use (like 'apple' instead of scientific names)."
+          },
+          "response": []
+        }
+      ],
+      "description": "APIs for food items and ingredients (entities) in the database"
+    },
+    {
+      "name": "Food Pairing Controller",
+      "item": [
+        {
+          "name": "Flavor Pairings by Ingredient",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/food/by-alias?food_pair=mango",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "food",
+                "by-alias"
+              ],
+              "query": [
+                {
+                  "key": "food_pair",
+                  "value": "mango"
+                }
+              ]
+            },
+            "description": "Finds a food item by its name and returns similar foods that pair well with it. Use when you want to discover what foods go well together or find pairing suggestions for a specific food item."
+          },
+          "response": []
+        }
+      ],
+      "description": "APIs for discovering food pairings and flavor combinations"
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://192.168.1.92:9208/flavordb",
+      "type": "string"
+    },
+    {
+      "key": "playgroundUrl",
+      "value": "https://www.foodoscope.com/playground/flavordb",
+      "type": "string"
+    },
+    {
+      "key": "authToken",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

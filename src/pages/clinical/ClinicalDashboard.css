@@ -1,0 +1,88 @@
+/* ── CLINICAL MODE — Medical Wellness Aesthetic ── */
+/* Sage greens, clinical whites, teal accents, leaf motifs */
+
+.clinical-bg {
+  background: linear-gradient(160deg, #F0F7F4 0%, #E8F5EF 50%, #F5F7F0 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.clinical-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(58,175,169,0.08) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.clinical-bg::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(27,94,74,0.06) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.clinical-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.clinical-icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(27,94,74,0.08);
+  border: 2px solid rgba(27,94,74,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Clinical-specific card styles */
+.clinical-bg .card {
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(27,94,74,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.clinical-bg .card:hover {
+  border-color: rgba(27,94,74,0.25);
+  box-shadow: 0 8px 32px rgba(27,94,74,0.1);
+}
+
+/* Cross/medical cross decorative element */
+.clinical-cross {
+  position: absolute;
+  opacity: 0.04;
+  font-size: 200px;
+  color: #1B5E4A;
+  pointer-events: none;
+  font-weight: 900;
+  user-select: none;
+}
+
+/* Pulse animation for health stats */
+@keyframes health-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.health-pulse {
+  animation: health-pulse 2s ease-in-out infinite;
+}
+
+/* Leaf watermark pattern */
+.clinical-pattern {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(27,94,74,0.04) 1px, transparent 0);
+  background-size: 40px 40px;
+}
